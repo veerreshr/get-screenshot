@@ -9,6 +9,7 @@ const getScreenshot = expressAsyncHandler(async (req, res) => {
   const url = req.params.url;
   try {
     const browser = await puppeteer.launch({
+      args: ["--no-sandbox", "--disable-setuid-sandbox"],
       ignoreDefaultArgs: ["--disable-extensions"],
     });
     const page = await browser.newPage();

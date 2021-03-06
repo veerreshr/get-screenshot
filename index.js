@@ -1,14 +1,9 @@
 import express from "express";
 import { config } from "dotenv";
-// import connectDB from "./config/db.js";
-// import movieRoutes from "./routes/movieRoutes.js";
-// import path from "path";
 import screenshotRoutes from "./routes/screenshot.js";
 import morgan from "morgan";
 
 config();
-
-// connectDB();
 
 const app = express();
 
