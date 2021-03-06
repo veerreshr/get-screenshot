@@ -1,1 +1,1 @@
-"# get-screenshot" 
+"# get-screenshot of webpage by url" 
