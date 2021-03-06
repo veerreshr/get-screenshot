@@ -13,6 +13,10 @@ const getScreenshot = expressAsyncHandler(async (req, res) => {
       ignoreDefaultArgs: ["--disable-extensions"],
     });
     const page = await browser.newPage();
+    await page.setViewport({
+      width: 1024,
+      height: 768,
+    });
     await page.goto(`https://${url}`);
     await page.screenshot({ path: `${url}.png` });
     await browser.close();
