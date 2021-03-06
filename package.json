@@ -1,0 +1,38 @@
+{
+  "name": "get-screenshot",
+  "version": "1.0.0",
+  "description": "Get Screenshot of url",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veerreshr/get-screenshot.git"
+  },
+  "keywords": [
+    "get",
+    "screenshot",
+    "by",
+    "url"
+  ],
+  "author": "Veeresh Raavipaati",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/veerreshr/get-screenshot/issues"
+  },
+  "homepage": "https://github.com/veerreshr/get-screenshot#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "morgan": "^1.10.0",
+    "puppeteer": "^8.0.0"
+  },
+  "type": "module"
+}
