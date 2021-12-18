@@ -2,7 +2,6 @@ import express from "express";
 import { config } from "dotenv";
 import screenshotRoutes from "./routes/screenshot.js";
 import morgan from "morgan";
-
 config();
 
 const app = express();
