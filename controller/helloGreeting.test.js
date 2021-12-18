@@ -18,6 +18,6 @@ describe("Test Handlers", function () {
 
 describe("Test", function () {
   test("test", () => {
-      expect(true).toEqual(false);
+      expect(true).toEqual(true);
   });
 });
